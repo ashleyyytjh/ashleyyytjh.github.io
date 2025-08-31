@@ -1,0 +1,116 @@
+/* styles.css - Challenge #2 (Skeleton: Rides Gallery) */
+
+
+/* 0) Base page */
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+}
+
+/* 1) Container */
+.container {
+    /* outline: auto; */
+    margin: auto;
+    display:flex;
+    width: 800px;
+    /* outline: auto; */
+    flex-direction: column;
+}
+
+/* 2) Section heading */
+.site-header h1 {
+    padding-left: 10px;
+}
+.attractions h2 {
+    font-size: xx-large;
+    /* outline: auto; */
+    text-align: center;
+}
+
+
+@keyframes wiggle {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(3deg); }
+    50%  { transform: rotate(-3deg); }
+    75%  { transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+/* 3) Cards wrapper (center all cards horizontally) */
+.cards {
+    /* outline: auto; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px gray;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    background-color: white;
+    width: 230px;
+    height: 210px;
+    margin: 12px;
+}
+
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height: 50%
+}
+.card:hover {
+    box-shadow: 0 0 0 2px red; /* red outline-like shadow */
+    animation: wiggle 0.4s ease;
+
+}
+
+.card h3, p{
+    padding-left: 5px;
+    padding-top: 0px;
+    margin: 8px;
+    
+}
+.card h3 {
+    /* outline: auto; */
+    margin-bottom: 0px;
+}
+.card p {
+    /* outline: auto; */
+    color: grey;
+}
+
+
+
+.site-footer {
+    border-top: 1px solid rgb(201, 201, 201);
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+
+/* 4) Card (size, spacing, border, rounded corners) */
+
+
+/* 5) Card text (h3 title, paragraph blurb) */
+
+
+/* 6) Card image (fit within card, centered) */
+
+
+/* 7) Hover state: change border to green, then make it wigglew */
+
+
+/* 8) Footer */

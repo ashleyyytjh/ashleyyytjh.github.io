@@ -1,0 +1,120 @@
+/* styles.css - Challenge #1 (Skeleton) */
+
+/*
+Use a readable, non-default font-family
+Set a soft page background-color
+Set a contrasting text color
+Remove default page margin
+*/
+body {
+    background-color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    display: flex;
+    justify-content: center;   
+    align-items: center;     
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;  
+    /* outline: auto; */
+    max-width: 800px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mascot-placeholder {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+#mascot-image {
+    width: 200px;
+}
+
+
+.site-header h1 {
+    font-size: 3em;
+    font-weight: 1000;
+    color: #e91e63;
+    text-align: center;
+    /* outline: auto; */
+}
+
+.site-header p {
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    color: gray;
+    /* outline: auto; */
+    margin-top: 2px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row; /* buttons side by side */
+    justify-content: center; 
+}
+
+@media (max-width: 380px) {
+  .actions {
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+  }
+}
+
+.actions button {
+    width: 160px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: large;
+    border: none;
+    color: white;
+    box-shadow: 0px 2px 12px gray;
+    font-weight: 700;
+}
+
+.make-donation:hover {
+    background-color: #131e99;
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+.buy-tickets:hover {
+    background-color: #139929;
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+button.make-donation {
+    background-color: purple;
+}
+
+button.buy-tickets {
+    background-color: rgb(135, 206, 28);
+}
+
+.site-footer {
+    text-align: center;
+    opacity: 70%;
+    font-size: 1em;
+    border-top: 1px grey solid;
+    width: 100%;
+    margin:10px;
+}
